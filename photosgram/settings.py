@@ -30,6 +30,10 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://photosgram-backend-production.up.railway.app',
+]
+
 ALLOWED_HOSTS = ['photosgram-backend-production.up.railway.app']
 
 
